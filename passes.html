@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merciado Amusement Park</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <link rel="icon" type="img/png" href="./Pictures/logo-removebg-preview.png" sizes="32x32"/>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <button class="text-white" onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm fixed-top" data-toggle="collapse" data-target=".nav-collapse">
+  <div class="container navbar-left"><a href="./index.html" class="navbar-brand text-uppercase font-weight-bold"><img class="img-fluid" id="logo" src="./Pictures/logo-removebg-preview.png" alt="logo"> </a>
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" style="color: #5d001e;" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+      
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="./index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a href="./Disclaimer.html" class="nav-link text-uppercase font-weight-bold">Disclaimer</a></li>
+              <li class="nav-item"><a href="./Gallery.html" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Attractions
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                    <a class="dropdown-item" href="./food.html">Food</a>
+                    <a class="dropdown-item" href="./events.html">Entertainment</a>
+                    <a class="dropdown-item" href="./passes.html">Passes</a>
+                </li>
+              <li class="nav-item"><a href="./contact us.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+              <li class="nav-item"><a href="./about us.html" class="nav-link text-uppercase font-weight-bold">About</a></li>
+          </ul>
+          <form class="navbar-right d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+              <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Search Here..." aria-label="Search" aria-describedby="basic-addon2" />
+                  <div class="input-group-append">
+                      <button class="btn" type="button"><i class="fas fa-search"></i></button>
+                  </div>
+              </div>
+          </form>
+</div>
+      </div>
+  
+</nav>
+<!-- tickets -->
+<div>
+    <img src="./Pictures/cp-passperks-desktop-sm-banner.jpg" class="img-fluid"/>
+</div>
+    <div class="container"  id="discription">
+        <br>
+        <h2>Pass Perks</h3>
+            <br>
+        <h3>Earn rewards while having fun!</h4>
+            <br>
+        <p>Get rewards simply by having fun? YES! With Merciado's Pass Perks, a new rewards program exclusively for Season Passholders,
+         each and every park visit counts toward earning fantastic surprises that you can redeem on future visits and
+          entries in a drawing for a one-of-a-kind VIP experience.
+    <br>
+        Here’s how it works if you have a 2020 Season Pass: You visit Merciado Amusment Park and have an awesome, colossal blast, like you always do. 
+        The next thing you know, you check email and there’s a message from us saying that the next time you visit during certain dates, you will receive a mega-marvelous goodie, like a FREE Bring-A-Friend ticket, one of our scrumptious treats or a humongous discount to something sensational.
+         Or, your email could say that your name has been drawn, you've won a Merciado's VIP experience! You never know what you can get, 
+        so it’s best to keep coming to the park and keep earning those valuable Pass Perks towards an experience like no other!
+    <br>
+    Want to become a Passholder to take advantage of Pass Perks and all the other rewards program benefits? Buy your 2020 Season Pass today!
+    </p>
+    <center>
+    <input type="button" value="Get Your Pass Now!" class="btn text-white"  id="buypass"/></center>
+    <br>
+    </div>
+    
+    <div class="container" id="passes" style="display: none;">
+        <br>
+    
+                                    <!-- PASS # 1 -->
+    <div class="row">
+    <div class="col-md-2">
+    <img src="images/passes/cp-2020sp-gold-ticketlisting.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-8">
+    <h3>2021 GOLD PASS</h3>
+    <p><strong>Unlimited Visits, Free Parking and More!</strong></p>
+    <p>Includes unlimited visits to Merciado Amusment and Merciado Waterpark every public operating day in 2020, 
+        free parking, special discounts, early ride times and more for less than the cost of two visits!</p>
+    </div>
+    <div class="col-md-2">
+    <p style="font-size: 9px;">Buy Online for only</p>
+    <h4 style="color:  #555;">$129*</h4>
+    <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+    <input type="button" class="btn text-white" value="Buy Now" data-toggle="modal" data-target="#myModal">
+    </div>
+    </div>
+    <hr>
+                                    <!-- PASS # 2 -->
+    
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-2020sp-platinum-ticketlisting.png" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>2021 PLATINUM PASS</h3>
+        <p><strong>Enjoy Access to All Merciado Amusment Parks</strong></p>
+        <p>Enjoy all the benefits of the Merciado Amusment Parks Gold Pass with the added benefits of enjoying all Platinum Passholder exclusive privileges at all
+             Merciado Amusment Park across the country</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px;">Buy Online for only</p>
+        <h4 style="color: #555;">$220*</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn text-white" value="Buy Now"data-toggle="modal" data-target="#myModal">
+        </div>
+        </div>
+        <hr>
+                                    <!-- PASS # 3 -->
+    
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cp-2020sp-regular-ticketlisting.png" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>2021 SEASON PASS</h3>
+            <p>Includes unlimited visits to Merciado Amusment & Waterpark every public operating day in 2020, 
+                free parking, special discounts, early ride times and more for less than the cost of two visits!</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">Buy Online for only</p>
+            <h4 style="color:  #555;">$115*</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white"  value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+            <hr>
+    
+                                    <!-- PASS # 4 -->
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-militarymondays-150-ticketlisting.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>MILLITARY MONDAY</h3>
+        <p>Valid any Monday Merciado Amusment Park is open to the public during the 2020 season. Not valid for separately ticketed events, 
+            concerts or park buyouts, unless otherwise indicated. All active, retired or honorably discharged military members are eligible, 
+            plus up to six (6) Merciado Amusment Park can be purchased for $44 each for immediate family members.</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; ;">Visit On Mondays for only</p>
+        <h4 style="color:  #555;">$18.70*</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn text-white"value="Buy Now"data-toggle="modal" data-target="#myModal">
+        </div>
+        </div>
+        <hr>
+                                    <!-- PASS # 5 -->
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cp-resortspackages-ticketlisting.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>MERCIADO HOTEL & RESORT PASS</h3>
+            <p>You’ll always find special savings and exclusive perks when you stay with us at an official Cedar Point hotel property.
+                 Enjoy discounted tickets, Early Entry – the chance to enter the park one hour before the general public to ride some of the biggest rides in the world,
+                 and the closest rooms to the world’s best amusement park destination.</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">Buy Online for only</p>
+            <h4 style="color:  #555;">$440*</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white" value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+            <hr>
+    
+    
+                                    <!-- PASS # 6 -->
+         <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cp-fundaybundle-ticketlisting.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>FUNDAY BUNDLE</h3>
+            <p><strong>Admission + Parking + Single Meal Deal</strong></p>
+            <p>Get everything you need for a full day of fun in 2020: One admission to Merciado Park, Parking and a Single Meal Deal.</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px; ">Buy Online for only</p>
+            <h4 style="color:  #555;">$129*</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white" value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+        <hr>
+    
+                                        <!-- PASS # 7 -->
+    
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cp-groups-150-ticketlisting.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>15-99 GROUP TICKETS</h3>
+            <p><strong>Admission + Parking + Single Meal Deal</strong></p>
+            <p>Gather family, friends, and co-workers to share in all of the fun and thrills at Merciado Amusment Park.
+                 These tickets are good on the day of your choice during public operating days of the 2020 season.
+                 You'll select your date of visit at the time of purchase.</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">Get 15+ Tickets Each As Low As</p>
+            <h4 style="color:  #555;">$40 / Person</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white"value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+        <hr>
+                                        <!-- PASS # 8 -->
+    
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cf-fastlane-ticketlisting.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>FAST LANE</h3>
+            <p>Make the most of your day with a Fast Lane wristband that allows you to bypass the regular lines on more than 20 rides and attractions
+                 including Valravn, Gatekeeper, Dodgem, and more. 
+                Ride as many times as you want all day long. The only thing we limit is the number of these exclusive passes we sell!</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">As Low As</p>
+            <h4 style="color:  #555;">$67</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white" value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+        <hr>
+                                        <!-- PASS # 9 -->
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cf-2020alldaydining-ticketlisting.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>ALL DAY DINNING</h3>
+            <p><strong>Eat All Day for One Great Price</strong></p>
+            <p>With the All Day Dining Plan you'll save a bundle while never going hungry.
+               Enjoy an entree and a side every time you choose to stop in at one of the participating restaurants inside the park for one visit during the 2020 season.
+               Best of all, there's only a 90-minute interval time between meals. Add food to your fun with the All Day Dining Plan.</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">Dine All Day for One Low Price</p>
+            <h4 style="color:  #555;">$40</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white" value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+        <hr>
+    
+                                        <!-- PASS # 10 -->
+    
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cp-sunriseviptour-cta.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>SUNRISE THRILLS VIP TOURS</h3>
+            <p>Get a behind-the-scenes look at the coasters of Merciado Amusment Park. Plus, hitch a ride in 
+                Valravn's lift elevator to watch the sunrise as you ascend 223 feet above the park for a once-in-a-lifetime photo opportunity.</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">Buy Online For</p>
+            <h4 style="color:  #555;">$199/ Person</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white"value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+        <hr>
+    
+                                        <!-- PASS # 12 -->
+    
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cp-goldviptour-cta.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>GOLD VIP TOURS</h3>
+            <p>Experience what it's like to be king or queen for the day at Merciado Amusment Park with a Gold VIP Tour.
+                 Nine hours of tour time, preferred parking, 
+                exclusive food and merchandise perks and so much more.</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">Buy Online For</p>
+            <h4 style="color:  #555;">$475/ Person</h4>
+            <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white" value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+        <hr>
+    
+                                        <!-- PASS # 13 -->
+    
+        <div class="row">
+            <div class="col-md-2">
+            <img src="images/passes/cp-destination-celebrationpackage-ticketlisting.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+            <h3>CELEBRATION PACKAGE</h3>
+            <p><strong>Valid May 9 – September 7, 2020</strong></p>
+            <p>It’s not every day you turn 150, but we’re celebrating our anniversary every day this season and we want you to join in! This celebratory package features an overnight stay at your choice of Merciado Park property, an exclusive Merciado Parks's Button Trading Pack,
+                 Play & Save Coupon Book, admission to Merciado Park for 1 or 2 days, unlimited access to the Merciado Park mile long beach</p>
+            </div>
+            <div class="col-md-2">
+            <p style="font-size: 9px;">As Low As</p>
+            <h4 style="color: #555;">$79/ Person</h4>
+            <p  style="font-size: 9px;">plus applicable taxes and fees</p>
+            <input type="button" class="btn text-white" value="Buy Now" data-toggle="modal" data-target="#myModal">
+            </div>
+            </div>
+        <hr>
+        <p>Merciado is not responsible for any inconvenience or financial loss due to unauthorized resale, and/or duplication of tickets on websites and apps such as OfferUp,
+            Craigslist, Ebay, Letgo, Facebook Marketplace and other auction and resale sites.
+            Tickets sold through these sources are not valid for entry into Cedar Point or Cedar Point Shores.
+            Cedar Point has implemented enhanced online security measures to help limit the number of fraudulent tickets that are in the marketplace,
+            and as such, you may be required to provide proof of purchase for any order at the front gate.</p>
+   </div>
+  
+   <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container" >
+        
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="text-center" style=" color:#555;font-size: xxlarger; margin-top:30px;">Send It Your Information</h1>
+            <p class="text-center" style="color:#5d001e;">We would like to hear from you!</p>
+                <form method="POST" action="index.php" onsubmit="return validation()">
+                <div class="form-group ">
+                      <input type="text" class="form-control" placeholder="First Name" required="required" autocapitalize="off">
+                    <span id="firstname" class="text-danger font-weight-bold"></span>
+                </div>
+        
+                <div class="form-group ">
+                        <input type="text" class="form-control" placeholder="Last Name" required="required"autocapitalize="off">
+                        <span id="lastname" class="text-danger font-weight-bold"></span>
+                    </div>
+        
+                    <div class="form-group ">
+                            <input type="email" class="form-control" placeholder="Email" required="required"autocapitalize="off">
+                            <span id="email" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group ">
+                          <input type="address" class="form-control" placeholder="Address" required="required"autocapitalize="off">
+                          <span id="email" class="text-danger font-weight-bold"></span>
+                      </div>
+        
+                        <div class="form-group ">
+                                <input type="number" class="form-control" placeholder="Phone Number" maxlength="15" required="required"autocapitalize="off">
+                                <span id="phone" class="text-danger font-weight-bold"></span>
+                            </div>
+                            <div class="form-group ">
+                              <input type="tel" id="cnic" class="form-control" placeholder="Enter Your CNIC" maxlength="15" required="required"autocapitalize="off">
+                              <span id="cnic" class="text-danger font-weight-bold"></span>
+                              
+                          </div>
+                          <div class="creditCardForm">
+                            <div class="payment">
+                                <form>
+                                    <div class="form-group owner">
+                                        <input type="text" class="form-control" id="owner" placeholder="Owner">
+                                    </div>
+                                    <div class="form-group CVV">
+                                        <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                    </div>
+                                    <div class="form-group" id="card-number-field">
+                                        <input type="text" class="form-control" id="cardNumber" placeholder="Card Number">
+                                    </div>
+                                    <div class="form-group" id="expiration-date">
+                                        <label>Expiration Date</label>
+                                        <select>
+                                            <option value="01">January</option>
+                                            <option value="02">February </option>
+                                            <option value="03">March</option>
+                                            <option value="04">April</option>
+                                            <option value="05">May</option>
+                                            <option value="06">June</option>
+                                            <option value="07">July</option>
+                                            <option value="08">August</option>
+                                            <option value="09">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                        <select>
+                                            <option value="16"> 2016</option>
+                                            <option value="17"> 2017</option>
+                                            <option value="18"> 2018</option>
+                                            <option value="19"> 2019</option>
+                                            <option value="20"> 2020</option>
+                                            <option value="21"> 2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group" id="credit_cards">
+                                        <img src="assets/images/visa.jpg" id="visa">
+                                        <img src="assets/images/mastercard.jpg" id="mastercard">
+                                        <img src="assets/images/amex.jpg" id="amex">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                            <input type="submit" class="btn text-white " style="width: 100%;" id="submit1" value="Register"></form>
+                        </div><br>
+                            
+        </div>
+        
+      </div>
+  
+    </div>
+  </div>
+<!-- Footer -->
+<div class="footer-top " id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-about wow fadeInUp">
+            
+                <a class="logo-footer" href="index.html"><img class="img-fluid" src="./Pictures/Screenshot (5).png" alt="logo">  </a>
+                <p class="text-white" style="padding: 5px;">
+                    Merciado Amusement park is now prime focus of the city and nation. It is made by
+                    Seth groups of companies.
+                </p>
+            
+            </div><br>
+                <div class="col-md-4 offset-md-1 footer-contact wow fadeInDown text-white">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Via Rossini 10, 10136 Mexico North America</p>
+                    <p><i class="fas fa-phone"></i> Phone: (0039) 333 12 68 347</p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">hello@domain.com</a></p>
+                    <p><i class="fab fa-skype"></i> Skype: you_online</p>
+                </div>
+    
+                <div class="col-md-4 footer-links wow fadeInUp text-white">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Links</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a class="scroll-link" href="#top-content" style="text-decoration: none;">Home</a></p>
+                            <p><a href="./Disclaimer.html"style="text-decoration: none;">Disclaimer</a></p>
+                            <p><a href="./Gallery.html"style="text-decoration: none;">Gallery</a></p>
+                            <p><a href="./contact us.html"style="text-decoration: none;">Contact</a></p>
+                            <p><a href="./about us.html"style="text-decoration: none;">About</a></p>
+                        </div>
+            
+                        <div class="col-md-6 footer-social text-white">
+                            <h3>Follow Us</h3>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f">&nbspmerciado@facebook.com</i></a><br>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter">&nbspmerciado@twitter.com</i></a><br>
+                            <a href="https://google.com/Login"><i class="fab fa-google">&nbspmercado@gmail.com</i></a><br> 
+                            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram">&nbspmerciado@instagram.com</i></a><br> 
+                            <a href="https://www.skype.com/"><i class="fab fa-skype">&nbspmerciado@skype.com</i></a><br>
+                        </div>
+                </div>
+            </div>
+                <div class="text-center" role="contentinfo"  style="font-size: small;">
+                    <span class="text-white">Copyright &copy; MARCIADO AMUSEMENT PARK</span>
+                    <span class="text-white">BY SETH Group of Companies.</span>
+                    <span>|</span>
+                </div>
+           
+        </div></div> 
+
+
+
+</body>
+<script>
+    $(function () {
+     $('.navbar').fadeOut(1);
+ $('.navbar').removeClass("hidden");
+ $('.navbar').show(2500);
+ $(window).on('scroll', function () {
+     if ( $(window).scrollTop() > 10 ) {
+         $('.navbar').addClass('active');
+     } else {
+         $('.navbar').removeClass('active');
+     }
+ });
+});
+
+$("body").fadeOut(1);
+$("body").fadeIn(3000);
+
+    $(document).ready(function(){
+        $("#buypass").click(function(){
+            $("#discription").hide()
+        });
+    });
+    
+    $(document).ready(function(){
+        $("#buypass").click(function(){
+            $("#passes").show()
+        });
+    });
+    
+    $(window).on('beforeunload', function(){
+           $(window).scrollTop(0);
+           });
+           var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function validation(){
+        var firstname=document.getElementById("#first").value;
+        var lastname=document.getElementById("#last").value;
+        var email=document.getElementById("#email").value;
+        var phone=document.getElementById("#phone").value;
+        var mes=document.getElementById("#mes").value;
+
+
+if(firstname=""){
+    document.getElementById("firstname").innerHTML="**Please enter your First Name!**"
+
+}
+else if((firstname.length<=2|| firstname.length>10)){
+    document.getElementById("firstname").innerHTML="**Name must be between 3 to 10 characters!**"
+
+}
+else if(!isNaN(firstname)){
+            document.getElementById("firstname").innerHTML="**Numbers are not acceptable!**";
+         } 
+
+         if(lastname == ""){
+             document.getElementById("lastname").innerHTML="**Please enter your Last Name!**"    
+         }
+         else if((lastname.length <= 2) || (lastname.length > 10 )){
+            document.getElementById("lastname").innerHTML="**Name must be between 3 to 10 characters!**";
+         }
+         else if(!isNaN(lastname)){
+            document.getElementById("lastname").innerHTML="**Numbers are not acceptable!**";
+         }
+        
+         if(phone == ""){
+             document.getElementById("number").innerHTML="**Please enter your Phone Number!**";  
+         }
+         else if(!isNaN(phone)){
+             document.getElementById("number").innerHTML="**Only Numbers are Required!**";  
+         }
+         else if(phone.length!=11){
+             document.getElementById("number").innerHTML="**User must be write 11 digits phone no.!**";  
+         }
+        if(email == ""){
+             document.getElementById("address").innerHTML="**Please enter your Email Address!**";
+         }
+         else if((email.charAt(email.length-4)!=".") && (email.charAt(email.length-3)!=".")){
+             document.getElementById("address").innerHTML="**invalid Email!**";
+         }
+
+         if(cnic=="" ){
+             document.getElementById("number").innerHTML="**Please enter your cnic!**";
+             
+         }
+         else if(!isNaN(cnic)){
+            document.getElementById("number").innerHTML="**Only Numbers are Required!**";
+         }
+         else if(cnic.length!=11){
+            document.getElementById("number").innerHTML="**User must be write 11 digits phone no.!**";
+         }
+
+
+    }
+$('#cnic').keydown(function(){
+if (event.keyCode == 8 || event.keyCode == 9 
+                  || event.keyCode == 27 || event.keyCode == 13 
+                  || (event.keyCode == 65 && event.ctrlKey === true) )
+                      return;
+if((event.keyCode < 48 || event.keyCode > 57))
+ event.preventDefault();
+
+var length = $(this).val().length; 
+            
+if(length == 5 || length == 13)
+ $(this).val($(this).val()+'-');
+
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/jquery.payform.min.js" charset="utf-8"></script>
+<script src="assets/js/script.js"></script>
+</html>
